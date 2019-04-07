@@ -1,0 +1,19 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SampleClass extends Base {
+	public static void main(String[] args) {
+		WebDriver driver = getDriver();
+		gettingUrl("https://www.toolsqa.com/handling-alerts-using-selenium-webdriver/");
+//		WebElement cour=driver.findElement(By.xpath("//a[@href=\"courses.html\"]"));
+//		mouseOver(cour);
+		WebElement simp=driver.findElement(By.xpath("//button[text()='Confirm Pop up']"));
+		btnClick(simp);
+		simpleAlert(driver);
+		
+	}
+
+}

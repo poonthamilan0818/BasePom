@@ -1,0 +1,33 @@
+package org.saturday.SampleTask;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Hotel extends Base {
+	public static void main(String[] args) throws IOException {
+		WebDriver driver = getDriver();
+		gettingUrl("http://adactin.com/HotelApp/index.php");
+		WebElement username = driver.findElement(By.id("username"));
+		getData(1, 0);
+	//	textInsert(username, "qwerty123456");
+		WebElement password = driver.findElement(By.id("password"));
+		getData(1, 1);
+		WebElement login=driver.findElement(By.id("login"));
+		btnClick(login);
+		WebElement location = driver.findElement(By.id("location"));
+		selectValue(location, "Hotel Creek");
+		WebElement hotel = driver.findElement(By.id("hotel"));
+		selectValue(hotel, "Sydney");
+		WebElement roomT = driver.findElement(By.id("room_type"));
+		selectValue(roomT, "Standard");
+		WebElement roomNo = driver.findElement(By.id("room_nos"));
+		selectValue(roomNo, "1");
+		
+		
+		
+	}
+
+}

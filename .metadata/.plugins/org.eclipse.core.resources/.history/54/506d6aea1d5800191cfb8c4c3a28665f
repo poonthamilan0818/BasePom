@@ -1,0 +1,14 @@
+package org.base;
+
+import org.openqa.selenium.WebDriver;
+
+public class Sample extends ReUsable {
+	public static void main(String[] args) {
+		WebDriver driver2 = getDriver();
+		gettingUrl("https:\\www.greenstechnology.com");
+		
+	}
+	
+	
+
+}

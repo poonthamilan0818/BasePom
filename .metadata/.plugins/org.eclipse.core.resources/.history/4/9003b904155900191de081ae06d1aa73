@@ -1,0 +1,11 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ValueInsert extends Base {
+	public Search() {
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy()
+}

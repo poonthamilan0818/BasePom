@@ -1,0 +1,16 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SampleClass extends Base {
+	public static void main(String[] args) {
+		WebDriver driver = getDriver();
+		gettingUrl("http://www.greenstechnologies.in/selenium-training.php");
+		WebElement cour=driver.findElement(By.xpath("//a[@href=\"courses.html\"]"));
+		mouseOver(cour);
+		
+	}
+
+}

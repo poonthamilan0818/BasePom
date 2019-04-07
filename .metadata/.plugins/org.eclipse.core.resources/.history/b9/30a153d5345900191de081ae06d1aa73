@@ -1,0 +1,20 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseOne {
+	static WebDriver driver;
+	public static WebDriver CallDriver() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\admin\\Desktop\\toda\\SampleTask\\driver\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		return driver;
+	}
+	public static  void LoadUrl() {
+		driver.get();
+	}
+	
+	
+
+}

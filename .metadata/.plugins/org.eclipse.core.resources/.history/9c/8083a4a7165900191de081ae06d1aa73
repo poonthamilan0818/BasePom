@@ -1,0 +1,27 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.WebDriver;
+
+public class SampleClass extends Base {
+	public static void main(String[] args) {
+		WebDriver driver = getDriver();
+		loadUrl("https://www.facebook.com/");
+		LoginPage log = new LoginPage();
+		ValueInsert val=new ValueInsert();
+		textInsert(val.getFirNam(), "poonthamilan");
+		
+//		textInsert(log.getUserName(), "qwerty");
+//		textInsert(log.getPassword(), "1234567");
+//		btnClick(log.getLoginButton());
+		// WebElement cour=driver.findElement(By.xpath("//a[@href=\"courses.html\"]"));
+		// mouseOver(cour);
+		// WebElement simp=driver.findElement(By.xpath("//button[text()='Confirm Pop
+		// up']"));
+		// printText(simp);
+		// btnClick(simp);
+		// simpleAlert(driver);
+		
+
+	}
+
+}

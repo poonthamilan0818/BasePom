@@ -1,0 +1,21 @@
+package org.saturday.SampleTask;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Hotel extends Base {
+	public static void main(String[] args) {
+		WebDriver driver = getDriver();
+		gettingUrl("http://adactin.com/HotelApp/index.php");
+		WebElement username = driver.findElement(By.id("username"));
+		textInsert(username, "qwerty123456");
+		WebElement password = driver.findElement(By.id("password"));
+		textInsert(password, "123456qwerty");
+		WebElement login=driver.findElement(By.id("login"));
+		btnClick(login);
+		
+		
+	}
+
+}
